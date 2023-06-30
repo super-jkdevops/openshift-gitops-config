@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
   name: poc
-  namespace: argo
+  namespace: superjkdevops-argo
 spec:
   clusterResourceBlacklist:
     - group: '*'
@@ -10,7 +10,7 @@ spec:
   clusterResourceWhitelist:
     - group: '*'
       kind: '*'
-  description: poc
+  description: superjkdevops-argo
   destinations:
     - name: in-cluster
       namespace: '*'
